@@ -14,7 +14,7 @@ export const projects: Project[] = [
     featured: true,
     description: "A comprehensive forecasting solution that transformed retail inventory management.",
     slug: "retail-demand-forecasting",
-    // Optional fields for your component:
+    // Additional compon. fields if chosen to be used.
     stats: [
       "20% sales increase",
       "15% stockout reduction",
@@ -35,5 +35,5 @@ export const projects: Project[] = [
     description: "Enhanced the shopping experience with AI-driven personalization.",
     slug: "ecommerce-personalization",
   },
-  // Add more projects as needed
+  // Additional compon. fields if chosen to be used.
 ];
