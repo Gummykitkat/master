@@ -49,17 +49,18 @@ export default function PortfolioPage() {
         </section>
       )}
 
-      {/* Other Projects */}
-      <section className="max-w-6xl mx-auto px-6 mb-20">
-        <h2 className="text-3xl font-bold mb-10 text-center">Other Projects</h2>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          {projects
-            .filter((p) => !p.featured)
-            .map((p) => (
-              <ProjectCard key={p.slug} project={p} />
-            ))}
-        </div>
-      </section>
+    {/* Other Projects */}
+    <section className="max-w-6xl mx-auto px-6 mb-20">
+      <h2 className="text-3xl font-bold mb-10 text-center">Other Projects</h2>
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        {projects
+          .filter((p) => !p.featured)
+          .map((p) => (
+            <ProjectCard key={p.slug} project={p} />
+          ))}
+      </div>
+    </section>
+
 
       {/* Call To Action */}
       <section className="bg-gradient-to-r from-pink-500 to-purple-500 py-16 text-center">
