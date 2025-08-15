@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
 
-export default function ProjectCard({ project }) {
+export default function ProjectCard({ Projects }) {
   return (
     <a
       href={`/case-study/${project.slug}`}

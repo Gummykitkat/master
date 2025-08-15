@@ -1,26 +1,34 @@
-import { Project } from "../types/projects"; 
+import { Project } from "../types/projects";
 
 export const projects: Project[] = [
   {
-    title: "Retail Demand Forecasting",
-    client: "Canadian Fashion Retailer",
-    challenge: "Managing seasonal inventory fluctuations led to frequent stockouts and lost sales.",
-    solution: "Implemented advanced demand forecasting using machine learning models for better inventory planning.",
+    title: "Demand Forecasting, Inventory Optimization/Replenishment",
+    client: "Optistock Analytics",
+    challenge:
+      "The client struggled with frequent stockouts and overstock situations, leading to lost sales, excess holding costs, and poor customer satisfaction. Their existing demand forecasting relied on static historical averages, which failed to adapt to seasonal patterns, market trends, or promotional impacts.",
+    solution:
+      "Developed a machine learning–driven demand forecasting model that incorporated historical sales, seasonality, promotional calendars, and macroeconomic indicators. Integrated the forecasting output with an inventory optimization algorithm to recommend optimal replenishment schedules and safety stock levels, reducing manual decision-making.",
     results: [
-      "Improved sales by 20%",
+      "Achieved 92% forecast accuracy",
+      "Reduced overstocks by 38% and excess inventory by 25%",
       "Reduced stockouts by 15%",
-      "Optimized stock levels across 100+ locations"
+      "Increased sales by 20%",
+      "Increased inventory turnover rate by 15% while maintaining service levels above 98%",
+      "Optimized stock levels across 100+ locations",
+      "Enabled data-driven replenishment decisions, saving an estimated $420,000 annually"
+    ],
+    chartData: [
+      { name: "Forecast Accuracy", value: 92 },
+      { name: "Overstocks Reduction", value: 38 },
+      { name: "Excess Inventory Reduction", value: 25 },
+      { name: "Stockouts Reduction", value: 15 },
+      { name: "Sales Increase", value: 20 }
     ],
     featured: true,
-    description: "A comprehensive forecasting solution that transformed retail inventory management.",
+    description:
+      "A comprehensive AI-powered forecasting and inventory optimization solution that improved retail performance, reduced waste, and boosted sales.",
     slug: "retail-demand-forecasting",
-    // Additional compon. fields if chosen to be used.
-    stats: [
-      "20% sales increase",
-      "15% stockout reduction",
-      "100+ stores optimized"
-    ],
-    // chart: <YourChartComponent />, // Optional React component
+    stats: ["20% sales increase", "15% stockout reduction", "100+ stores optimized"]
   },
   {
     title: "E-commerce Personalization",
@@ -33,7 +41,6 @@ export const projects: Project[] = [
     ],
     featured: false,
     description: "Enhanced the shopping experience with AI-driven personalization.",
-    slug: "ecommerce-personalization",
-  },
-  // Additional compon. fields if chosen to be used.
+    slug: "ecommerce-personalization"
+  }
 ];
